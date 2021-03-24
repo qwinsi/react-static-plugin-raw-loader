@@ -25,6 +25,23 @@ export default {
 };
 ```
 
+Now you can import raw text as  a String from `*.txt` file or `*.md` file.
+
+```jsx
+import React from "react"
+import textValue from "something.txt"
+
+const App = function() {
+    return (
+        <div>
+            <p>{textValue}</p>
+        <div/>
+    );
+};
+```
+
+
+
 ## Dependencies
 
 - [raw-loader](https://github.com/webpack-contrib/raw-loader)
