@@ -19,7 +19,7 @@ export default {
   // ...
   plugins: [
     // ...
-    "react-static-plugin-raw-loader"
+    'react-static-plugin-raw-loader'
   ]
   // ...
 };
@@ -28,8 +28,8 @@ export default {
 Now you can import raw text as  a String from `*.txt` file or `*.md` file.
 
 ```jsx
-import React from "react"
-import textValue from "something.txt"
+import React from 'react'
+import textValue from 'something.txt'
 
 const App = function() {
     return (
@@ -38,6 +38,14 @@ const App = function() {
         <div/>
     );
 };
+```
+
+### For Typescript
+
+For Typescript user, you may need type declaration. Add this to any .ts/.tsx file in your typescript project.
+
+```ts
+import 'react-static-plugin-raw-loader/raw.d' // import type declaration
 ```
 
 
