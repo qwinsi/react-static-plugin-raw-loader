@@ -42,10 +42,19 @@ const App = function() {
 
 ### For Typescript
 
-For Typescript user, you may need type declaration. Add this to any .ts/.tsx file in your typescript project.
+For Typescript user, you may need type declaration. Save this as `yourcustomfilename.d.ts` , and you can place it anywhere in your typescript project to take effect.
 
 ```ts
-import 'react-static-plugin-raw-loader/raw.d' // import type declaration
+declare module "*.txt" {
+  const content: string;
+  export default content;
+}
+
+declare module "*.md" {
+  const content: string;
+  export default content;
+}
+
 ```
 
 
